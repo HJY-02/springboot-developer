@@ -14,5 +14,9 @@ public class TestService {
         return testRepository.findAll(); //select * from member;
     }
 
+    public Member saveMember(Member member){
+        return testRepository.save(member); //insert into member(id, name) values(member.getId(), member.getName())
+    }
+
 
 }
