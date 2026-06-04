@@ -17,11 +17,10 @@
             onclick="location.href='/new-article'"
             id="create-btn">글 등록
     </button>
-    <div class="row">
-        <div class="col-6" th:each="item : ${articles}">
+<!--    <div class="row">-->
+        <div class="row-6" th:each="item : ${articles}">
             <div class="card">
-                <div class="card-header" th:text="${item.id}">
-                </div>
+                <div class="card-header" th:text="${item.id}"></div>
                 <div class="card-body">
                     <h5 class="card-title" th:text="${item.title}"> </h5>
                     <p class="card-text" th:text="${item.content}"></p>
@@ -30,7 +29,8 @@
             </div>
             <br>
         </div>
-    </div>
+<!--    </div>-->
+    <button type="button" class="btn btn-secondary" onclick="location.href='/logout'">로그아웃</button>
 </div>
 </body>
 </html>
