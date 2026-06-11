@@ -28,6 +28,8 @@ public class User implements UserDetails {
     @Column(name = "password")
     private String password;
 
+    @Column(name="nickname")
+    private String nickname;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
